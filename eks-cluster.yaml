@@ -1,0 +1,14 @@
+apiVersion: eksctl.io/v1alpha5        # Specifies the API version of eksctl's ClusterConfig schema
+kind: ClusterConfig                   # Declares the kind of configuration; here, it’s for an EKS cluster
+
+metadata:
+  name: demo-eks-cluster              # Name of the EKS cluster to create
+  region: us-east-1                   # AWS region where the cluster will be deployed
+
+nodeGroups:                           # Defines the worker node groups for the cluster
+  - name: ng-1                        # Name of the node group
+    instanceType: t3.micro           # EC2 instance type for each node (t3.micro is suitable for testing)
+    desiredCapacity: 2               # Number of nodes to launch in this group
+    ssh:
+      allow: true                    # Enables SSH access to the nodes (uses default key or prompts to select one)
+
