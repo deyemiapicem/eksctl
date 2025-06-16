@@ -41,9 +41,8 @@ Output format (e.g. json)
 
 # AT THE END YOU SHOULD SEE THE NODES CREATED---
 Verifying cluster nodes...
-NAME                             STATUS   ROLES    AGE     VERSION
-ip-192-168-24-160.ec2.internal   Ready    <none>   2m16s   v1.32.3-eks-473151a
-ip-192-168-55-107.ec2.internal   Ready    <none>   2m22s   v1.32.3-eks-473151a
+![image](https://github.com/user-attachments/assets/f2852908-d92b-4b7a-a5ab-0c9bd8756a5d)
+
 
 
 # run ./destroy.sh (destroy cluster)
